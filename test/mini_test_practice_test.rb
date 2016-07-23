@@ -19,7 +19,7 @@ class MiniTestPracticeTest < Minitest::Test
     assert_equal false, @main.odd?(2), '2 is not odd'
     assert_equal false, @main.odd?(10000), '10000 is not odd'
     assert_equal true, @main.odd?(3), '3 is odd'
-    refute @main.odd?(4), '4 is not odd'
+    assert_equal false, @main.odd?(4), '4 is not odd'
     assert @main.odd?(5), '5 is odd'
     refute @main.odd?(6), '6 is not odd'
     assert @main.odd?(7), '7 is odd'
